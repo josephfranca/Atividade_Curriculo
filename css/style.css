@@ -1,0 +1,22 @@
+/*CSS do index*/
+nav {
+    border-bottom: 1px solid black;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: blue;
+}
