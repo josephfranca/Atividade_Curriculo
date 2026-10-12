@@ -1,4 +1,11 @@
 /*CSS do index*/
+
+body{
+    background-color: cadetblue;
+    padding: 0;
+    margin: 0;
+    
+}
 nav {
     border-bottom: 1px solid black;
 }
@@ -20,3 +27,240 @@ nav {
 .menu li a:hover {
     color: blue;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerCards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+/*Estilização página curriculo*/
+
+h1,p,h3,h2{
+    text-align: center;
+}
+
+.linksCurriculo{
+     display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.experiencia {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.experiencia h2 {
+    font-size: 28px;
+    color: #222;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.experiencia h3 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.experiencia ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    border-left: 2px solid #ddd;
+}
+
+.experiencia li {
+    position: relative;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.experiencia li::before {
+    content: "•";
+    color: #007bff;
+    font-size: 20px;
+    position: absolute;
+    left: -5px;
+    top: -2px;
+}
+
+.experiencia h3 {
+    border-left: 4px solid #007bff;
+    padding-left: 12px;
+}
+
+.experiencia ul:last-child {
+    margin-bottom: 0;
+}
+
+/* FORMAÇÃO */
+.formacao {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.formacao h3 {
+    font-size: 24px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.formacao p {
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 12px 15px;
+    margin: 10px 0;
+    background-color: #f5f7fa;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
+/* CURSOS E IDIOMAS */
+.cursosIdiomas {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cursosIdiomas::before {
+    content: "Cursos e Idiomas";
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cursosIdiomas p {
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 12px 15px;
+    margin: 10px 0;
+    background-color: #f5f7fa;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
+/* PROJETOS ACADÊMICOS */
+.projetosAcademicos {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.projetosAcademicos::before {
+    content: "Projetos Acadêmicos";
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.projetosAcademicos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projetosAcademicos li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    border-left: 4px solid #007bff;
+    padding-left: 12px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.projetosAcademicos p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 0 25px;
+    padding: 15px;
+    background-color: #f5f7fa;
+    border-radius: 5px;
+}
+
+.projetosAcademicos p:last-child {
+    margin-bottom: 0;
+}
+
+/* Deixando responsivel  */
+@media (max-width: 600px) {
+    .formacao,
+    .cursosIdiomas,
+    .projetosAcademicos {
+        margin: 20px 10px;
+        padding: 18px;
+    }
+
+    .formacao h3,
+    .cursosIdiomas::before,
+    .projetosAcademicos::before {
+        font-size: 21px;
+    }
+
+    .projetosAcademicos p {
+        text-align: left;
+    }
+}
+
+
